@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 17 01:33:09 2019
+# Process ID: 12156
+# Current directory: D:/Desktop/FINAL SUBMISSION/Filters/FIlters/nexys_final.runs/impl_1
+# Command line: vivado.exe -log filters.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source filters.tcl -notrace
+# Log file: D:/Desktop/FINAL SUBMISSION/Filters/FIlters/nexys_final.runs/impl_1/filters.vdi
+# Journal file: D:/Desktop/FINAL SUBMISSION/Filters/FIlters/nexys_final.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source filters.tcl -notrace

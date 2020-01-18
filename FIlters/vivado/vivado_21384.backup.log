@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 11 13:59:29 2019
+# Process ID: 21384
+# Current directory: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12964 C:\Users\Priyam Tongia\Desktop\nexys_final\nexys_final\nexys_final.xpr
+# Log file: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/vivado.log
+# Journal file: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.xpr}
+WARNING: [Board 49-91] Board repository path 'C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Tongia/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Tongia/AppData/Roaming/Xilinx/Vivado/Tongia/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Tongia/AppData/Roaming/Xilinx/Vivado/Tongia/AppData/Roaming/Xilinx/Vivado/{C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Users/Priyam' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Tongia/AppData/Roaming/Xilinx/Vivado/Tongia/AppData/Roaming/Xilinx/Vivado/Tongia/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}' does not exist, it will not be used to search board files.
+INFO: [Project 1-313] Project file moved from 'D:/Desktop/nexys_final' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Asus/Desktop/modifiedimages/blur/blur_coe.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Asus/Desktop/modifiedimages/flower/flower_coe.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'c:/Users/Asus/Desktop/modifiedimages/man/man_coe.coe'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Asus/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivardo_Setup/Downloads/2019.1/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 684.793 ; gain = 56.844
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_blur {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci}}
+INFO: [Project 1-386] Moving file 'C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci' from fileset 'blk_blur' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_hors {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci}}
+INFO: [Project 1-386] Moving file 'C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci' from fileset 'blk_hors' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_horse/blk_horse.xci}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_horse/blk_horse.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_umbrella {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci}}
+INFO: [Project 1-386] Moving file 'C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci' from fileset 'blk_umbrella' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 {{C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+INFO: [Project 1-386] Moving file 'C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files c:/Users/Asus/Desktop/modifiedimages/blur/blur_coe.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Asus/Desktop/modifiedimages/flower/flower_coe.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Asus/Desktop/modifiedimages/man/man_coe.coe] -no_script -reset -force -quiet
+remove_files  {c:/Users/Asus/Desktop/modifiedimages/blur/blur_coe.coe c:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe c:/Users/Asus/Desktop/modifiedimages/flower/flower_coe.coe c:/Users/Asus/Desktop/modifiedimages/man/man_coe.coe}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/flower/flower_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/flower/flower_coe.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_flower -dir {c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {blk_flower} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/flower/flower_coe.coe}] [get_ips blk_flower]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_flower' to 'blk_flower' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/flower/flower_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/flower/flower_coe.coe'
+generate_target {instantiation_template} [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_flower'...
+generate_target all [get_files  {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_flower'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_flower'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_flower'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_flower'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 830.246 ; gain = 4.625
+catch { config_ip_cache -export [get_ips -all blk_flower] }
+export_ip_user_files -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}]
+launch_runs -jobs 6 blk_flower_synth_1
+[Mon Nov 11 14:05:16 2019] Launched blk_flower_synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/blk_flower_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}] -directory {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files} -ipstatic_source_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/man/man_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/man/man_coe.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_man -dir {c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {blk_man} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/man/man_coe.coe}] [get_ips blk_man]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_man' to 'blk_man' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/man/man_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/man/man_coe.coe'
+generate_target {instantiation_template} [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_man'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_man'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_man'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_man'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_man'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 836.809 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_man] }
+export_ip_user_files -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}]
+launch_runs -jobs 6 blk_man_synth_1
+[Mon Nov 11 14:08:05 2019] Launched blk_man_synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/blk_man_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}] -directory {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files} -ipstatic_source_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/parrot/parrot.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/parrot/parrot.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/blur/blur_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/blur/blur_coe.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_blur -dir {c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {blk_blur} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/blur/blur_coe.coe}] [get_ips blk_blur]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_blur' to 'blk_blur' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/blur/blur_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/blur/blur_coe.coe'
+generate_target {instantiation_template} [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_blur'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_blur'...
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 864.039 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_blur] }
+export_ip_user_files -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}]
+launch_runs -jobs 6 blk_blur_synth_1
+[Mon Nov 11 14:10:26 2019] Launched blk_blur_synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/blk_blur_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}] -directory {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files} -ipstatic_source_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/contrast/contrast_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/contrast/contrast_coe.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_contrast -dir {c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Component_Name {blk_contrast} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/contrast/contrast_coe.coe}] [get_ips blk_contrast]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_contrast' to 'blk_contrast' is not allowed and is ignored.
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Priyam Tongia/Desktop/nexys_final/modifiedimages/contrast/contrast_coe.coe' provided. It will be converted relative to IP Instance files '../../../../../modifiedimages/contrast/contrast_coe.coe'
+generate_target {instantiation_template} [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_contrast'...
+generate_target all [get_files  {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_contrast'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_contrast'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_contrast'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_contrast'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 897.043 ; gain = 6.965
+catch { config_ip_cache -export [get_ips -all blk_contrast] }
+export_ip_user_files -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}]
+launch_runs -jobs 6 blk_contrast_synth_1
+[Mon Nov 11 14:12:30 2019] Launched blk_contrast_synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/blk_contrast_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}] -directory {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files} -ipstatic_source_dir {C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Nov 11 14:17:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/synth_1/runme.log
+[Mon Nov 11 14:17:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Nov 11 14:21:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/synth_1/runme.log
+[Mon Nov 11 14:21:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/impl_1/runme.log
+open_hw
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Nov 11 15:41:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/synth_1/runme.log
+[Mon Nov 11 15:41:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Priyam Tongia/Desktop/nexys_final/nexys_final/nexys_final.runs/impl_1/runme.log
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 23:33:08 2019...

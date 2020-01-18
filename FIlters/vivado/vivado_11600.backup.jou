@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Nov 14 16:41:10 2019
+# Process ID: 11600
+# Current directory: C:/Users/Priyam Tongia/Desktop/Filters/FIlters
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12924 C:\Users\Priyam Tongia\Desktop\Filters\FIlters\nexys_final.xpr
+# Log file: C:/Users/Priyam Tongia/Desktop/Filters/FIlters/vivado.log
+# Journal file: C:/Users/Priyam Tongia/Desktop/Filters/FIlters\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_flower {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_flower/blk_flower.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_contrast {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_contrast/blk_contrast.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_blur {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_blur_1/blk_blur.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_man {{C:/Users/Priyam Tongia/Desktop/Filters/FIlters/nexys_final.srcs/sources_1/ip/blk_man/blk_man.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/blur/blur_coe.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/contrast/contrast_coe.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/flower/flower_coe.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/man/man_coe.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/blur/blur_coe.coe} {C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/contrast/contrast_coe.coe} {C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/flower/flower_coe.coe} {C:/Users/Priyam Tongia/Desktop/Filters/modifiedimages/man/man_coe.coe}}

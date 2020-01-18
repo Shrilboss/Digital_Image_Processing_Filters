@@ -1,0 +1,384 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 10 14:30:37 2019
+# Process ID: 24796
+# Current directory: D:/Desktop/nexys_final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15524 D:\Desktop\nexys_final\nexys_final.xpr
+# Log file: D:/Desktop/nexys_final/vivado.log
+# Journal file: D:/Desktop/nexys_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Desktop/nexys_final/nexys_final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 925.652 ; gain = 288.313
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+file mkdir D:/Desktop/nexys_final/nexys_final.srcs/constrs_1
+file mkdir D:/Desktop/nexys_final/nexys_final.srcs/constrs_1/new
+close [ open D:/Desktop/nexys_final/nexys_final.srcs/constrs_1/new/constr.xdc w ]
+add_files -fileset constrs_1 D:/Desktop/nexys_final/nexys_final.srcs/constrs_1/new/constr.xdc
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_blur -dir d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {blk_blur} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/blur/blur_coe.coe}] [get_ips blk_blur]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_blur' to 'blk_blur' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_blur'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_blur'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_blur'...
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1035.375 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_blur] }
+export_ip_user_files -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci]
+launch_runs -jobs 8 blk_blur_synth_1
+[Sun Nov 10 14:50:39 2019] Launched blk_blur_synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/blk_blur_synth_1/runme.log
+export_simulation -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_blur/blk_blur.xci] -directory D:/Desktop/nexys_final/nexys_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/nexys_final/nexys_final.ip_user_files -ipstatic_source_dir D:/Desktop/nexys_final/nexys_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_horse -dir d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {blk_horse} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe}] [get_ips blk_horse]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_horse' to 'blk_horse' is not allowed and is ignored.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+96
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.Component_Name {blk_horse} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe}] [get_ips blk_horse]'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.Component_Name {blk_horse} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe}] [get_ips blk_horse]'
+INFO: [Common 17-344] 'set_property' was cancelled
+INFO: [Common 17-344] 'set_property' was cancelled
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_hors -dir d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {blk_hors} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/contrast/contrast_coe.coe}] [get_ips blk_hors]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_hors' to 'blk_hors' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_hors'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_hors'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_hors'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_hors'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_hors'...
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1058.047 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_hors] }
+export_ip_user_files -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci]
+launch_runs -jobs 8 blk_hors_synth_1
+[Sun Nov 10 14:56:29 2019] Launched blk_hors_synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/blk_hors_synth_1/runme.log
+export_simulation -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_hors/blk_hors.xci] -directory D:/Desktop/nexys_final/nexys_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/nexys_final/nexys_final.ip_user_files -ipstatic_source_dir D:/Desktop/nexys_final/nexys_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 14:58:37 2019] Launched blk_hors_synth_1, synth_1...
+Run output will be captured here:
+blk_hors_synth_1: D:/Desktop/nexys_final/nexys_final.runs/blk_hors_synth_1/runme.log
+synth_1: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 14:58:37 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1078.254 ; gain = 8.754
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2200.438 ; gain = 1122.184
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 16:01:34 2019] Launched synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 16:01:34 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 16:10:40 2019] Launched synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 16:10:40 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 16:17:28 2019] Launched synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 16:17:28 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 16:43:04 2019] Launched synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 16:43:04 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_umbrella -dir d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {blk_umbrella} CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/flower/flower_coe.coe}] [get_ips blk_umbrella]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'blk_umbrella' to 'blk_umbrella' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_umbrella'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_umbrella'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_umbrella'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_umbrella'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_umbrella'...
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2701.617 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_umbrella] }
+export_ip_user_files -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci]
+launch_runs -jobs 8 blk_umbrella_synth_1
+[Sun Nov 10 16:57:20 2019] Launched blk_umbrella_synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/blk_umbrella_synth_1/runme.log
+export_simulation -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_umbrella/blk_umbrella.xci] -directory D:/Desktop/nexys_final/nexys_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/nexys_final/nexys_final.ip_user_files -ipstatic_source_dir D:/Desktop/nexys_final/nexys_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip
+set_property -dict [list CONFIG.Write_Width_A {96} CONFIG.Write_Depth_A {18402} CONFIG.Read_Width_A {96} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {96} CONFIG.Read_Width_B {96} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/Asus/Desktop/modifiedimages/man/man_coe.coe}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2701.617 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 8 blk_mem_gen_0_synth_1
+[Sun Nov 10 16:58:38 2019] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files d:/Desktop/nexys_final/nexys_final.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory D:/Desktop/nexys_final/nexys_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Desktop/nexys_final/nexys_final.ip_user_files -ipstatic_source_dir D:/Desktop/nexys_final/nexys_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/modelsim} {questa=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/questa} {riviera=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/riviera} {activehdl=D:/Desktop/nexys_final/nexys_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Desktop/nexys_final/nexys_final.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Nov 10 17:01:30 2019] Launched blk_umbrella_synth_1, blk_mem_gen_0_synth_1, synth_1...
+Run output will be captured here:
+blk_umbrella_synth_1: D:/Desktop/nexys_final/nexys_final.runs/blk_umbrella_synth_1/runme.log
+blk_mem_gen_0_synth_1: D:/Desktop/nexys_final/nexys_final.runs/blk_mem_gen_0_synth_1/runme.log
+synth_1: D:/Desktop/nexys_final/nexys_final.runs/synth_1/runme.log
+[Sun Nov 10 17:01:31 2019] Launched impl_1...
+Run output will be captured here: D:/Desktop/nexys_final/nexys_final.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/Desktop/nexys_final/nexys_final.runs/impl_1/filters.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE6CA
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 10 18:29:32 2019...
