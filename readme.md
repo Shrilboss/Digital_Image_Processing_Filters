@@ -55,6 +55,3 @@ To see and compare various filters that we have implemented, you have to give th
 14.	1101 - Colour VGA Red Sobel X
 15.	1110 - Sobel Y
 16.	1111 - Colour VGA Red Sobel Y 
-
-
-
